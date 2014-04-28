@@ -1,0 +1,61 @@
+/* ==========================================================================
+  Buttons
+========================================================================== */
+
+
+.btn {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 12px 27px 13px;
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  transition: all .15s ease-in-out;
+  &:hover,
+  &:focus {
+    border: 2px solid $grayDark;
+    color: #fff;
+  }
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+
+  .orange & {
+    &:hover,
+    &:focus {
+      border: 2px solid darken( $orange, 15% );
+    }
+  }
+
+  .blue & {
+    &:hover,
+    &:focus {
+      border: 2px solid darken( $blue, 15% );
+    }
+  }
+
+  .light-blue & {
+    &:hover,
+    &:focus {
+      border: 2px solid darken( $lightBlue, 20% );
+    }
+  }
+
+  .purple & {
+    &:hover,
+    &:focus {
+      border: 2px solid darken( $purple, 10% );
+    }
+  }
+}

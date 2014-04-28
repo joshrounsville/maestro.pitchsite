@@ -1,0 +1,145 @@
+/* ==========================================================================
+  Classes
+========================================================================== */
+
+
+/**** **** **** **** ****
+  backgrounds
+**** **** **** **** ****/
+
+.gray-light {
+  background: $grayLight;
+}
+
+.gray-dark {
+  background: $grayDark;
+  color: #ccc;
+  h3 {
+    color: #ccc;
+  }
+}
+
+
+/**** **** **** **** ****
+  Lists
+**** **** **** **** ****/
+
+.list-inline {
+  li {
+    display: inline-block;
+  }
+}
+
+
+/**** **** **** **** ****
+  Floats & Order
+**** **** **** **** ****/
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.order-1 {
+  order: 1;
+  .no-flexbox & {
+    float: left;
+    @include breakpoint(small) {
+      float: none;
+    }
+  }
+}
+
+.order-2 {
+  order: 2;
+  .no-flexbox & {
+    float: right;
+    @include breakpoint(small) {
+      float: none;
+    }
+  }
+}
+
+
+/**** **** **** **** ****
+  Text Align
+**** **** **** **** ****/
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/**** **** **** **** ****
+  Vertical Centering
+**** **** **** **** ****/
+
+.v-align {
+  display: table;
+  .inner {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.flex-v-align {
+  align-items: center;
+}
+
+
+/**** **** **** **** ****
+  Hide
+**** **** **** **** ****/
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.tablet-hide {
+  @include breakpoint(medium) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.mobile-hide {
+  @include breakpoint(small) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
+/**** **** **** **** ****
+  Utilites
+**** **** **** **** ****/
+
+.break {
+  display: block;
+
+  @include breakpoint(large) {
+    display: inline;
+  }
+  @include breakpoint(medium) {
+    display: inline;
+  }
+  @include breakpoint(small) {
+    display: inline;
+  }
+}
+
+.clearfix {
+  @include clearfix();
+}

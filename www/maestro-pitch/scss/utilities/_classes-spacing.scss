@@ -1,0 +1,111 @@
+/* ==========================================================================
+  Classes - Spacing
+========================================================================== */
+
+
+/**** **** **** **** ****
+  Padding
+**** **** **** **** ****/
+
+.pad {
+  padding: $padding;
+}
+
+
+.pad-v {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+.pad-h {
+  padding-right: $padding;
+  padding-left: $padding;
+}
+
+
+.pad-t {
+  padding-top: $padding;
+}
+
+.pad-t--10 {
+  padding-top: 10px;
+}
+
+.pad-t--20 {
+  padding-top: 20px;
+}
+
+.pad-b {
+  padding-bottom: $padding;
+}
+
+.pad-b--10 {
+  padding-bottom: 10px;
+}
+
+.pad-b--20 {
+  padding-bottom: 20px;
+}
+
+
+.pad-r {
+  padding-right: $padding;
+}
+
+.pad-l {
+  padding-right: $padding;
+}
+
+
+.pad-b--0 {
+  padding-bottom: 0;
+}
+
+
+/**** **** **** **** ****
+  Margin
+**** **** **** **** ****/
+
+.mar {
+  margin: $margin;
+}
+
+
+.mar-v {
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
+
+.mar-h {
+  margin-right: $margin;
+  margin-left: $margin;
+}
+
+
+.mar-t {
+  margin-top: $margin;
+}
+
+.mar-t--10 {
+  margin-top: 10px;
+}
+
+.mar-t--20 {
+  margin-top: 20px;
+}
+
+.mar-b {
+  margin-bottom: $margin;
+
+  @include breakpoint(small) {
+    margin-bottom: 0;
+  }
+}
+
+.mar-b--10 {
+  margin-bottom: 10px;
+}
+
+.mar-b--20 {
+  margin-bottom: 20px;
+}

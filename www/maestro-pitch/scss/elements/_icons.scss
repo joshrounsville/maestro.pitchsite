@@ -1,0 +1,70 @@
+/* ==========================================================================
+  Icons
+========================================================================== */
+
+
+.icon {
+  background: url(/img/elements/sprite.png) no-repeat 0 0;
+  display: block;
+  width: 66px;
+  height: 66px;
+}
+
+.icon-clean-design {
+  background-position: -1px 0;
+  width: 76px;
+  height: 75px;
+}
+
+.icon-gestures {
+  background-position: 0 -106px;
+  width: 142px;
+  height: 66px;
+}
+
+.icon-custom-colors {
+  background-position: -1px -201px;
+}
+
+.icon-favorites {
+  background-position: -1px -284px;
+}
+
+.icon-reminders {
+  background-position: 0 -366px;
+}
+
+.icon-account-support {
+  background-position: 0 -446px;
+  width: 142px;
+}
+
+.icon-voice {
+  background-position: 0 -525px;
+}
+
+.icon-labels {
+  background-position: 0 -603px;
+}
+
+.icon-monetization {
+  background-position: 0 -681px;
+}
+
+.icon-cost-structure {
+  background-position: 0 -760px;
+}
+
+.icon-competitors {
+  background-position: 0 -839px;
+}
+
+.icon-play {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  position: relative;
+  left: -7px;
+  margin: 0 0 -8px;
+  background-position: -3px -942px;
+}

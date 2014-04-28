@@ -1,0 +1,209 @@
+/* ==========================================================================
+  Forms
+========================================================================== */
+
+form {
+  margin: 0;
+  @include placeholder(#ccc);
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+  -webkit-appearance: none;
+  -webkit-border-radius:0;
+  border-radius:0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input[type="email"],
+input[type="text"] {
+  border: 1px solid #ddd;
+  padding: 15px 30px 15px;
+  @include placeholder(#ddd);
+  @include thinFont();
+  transition: all .15s ease-in-out;
+  &:hover,
+  &:focus {
+    outline: 0;
+    border: 1px solid $blue;
+    box-shadow: 0 0 3px #ccc;
+  }
+  &.no-border {
+    border: 1px solid #fff;
+    &:hover,
+    &:focus {
+      border: 1px solid $blue;
+    }
+  }
+
+  .purple & {
+    &:hover,
+    &:focus {
+      border: 1px solid $purple;
+    }
+  }
+  .light-blue & {
+    &:hover,
+    &:focus {
+      border: 1px solid $lightBlue;
+    }
+  }
+  .orange & {
+    &:hover,
+    &:focus {
+      border: 1px solid $orange;
+    }
+  }
+
+  @include breakpoint(large) {
+    font-size: 18px;
+  }
+}
+
+input[type="submit"] {
+  border: none;
+  background: $blue;
+  color: #fff;
+  padding: 16px 30px;
+  @include thinFont();
+  transition: background .15s ease-in-out;
+  &:hover,
+  &:focus {
+    outline: 0;
+    background: darken($blue, 10%);
+  }
+
+  .purple & {
+    background: $purple;
+    &:hover,
+    &:focus {
+      background: darken($purple, 10%);
+    }
+  }
+  .light-blue & {
+    background: $lightBlue;
+    &:hover,
+    &:focus {
+      background: darken($lightBlue, 10%);
+    }
+  }
+  .orange & {
+    background: $orange;
+    &:hover,
+    &:focus {
+      background: darken($orange, 10%);
+    }
+  }
+
+  @include breakpoint(large) {
+    font-size: 18px;
+  }
+}
+
+
+
+.form-signup {
+  position: relative;
+  input[type="email"],
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    padding-right: 150px;
+  }
+  input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  @include breakpoint(small) {
+    input[type="email"],
+    input[type="text"] {
+      padding: 15px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      position: relative;
+      width: 100%;
+      margin: 10px 0 0 0;
+      font-size: 16px;
+    }
+  }
+}
+
+

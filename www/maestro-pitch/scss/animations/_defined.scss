@@ -1,0 +1,74 @@
+/* ==========================================================================
+  Animation - Defined
+========================================================================== */
+
+
+.animate {
+  animation-fill-mode: both;
+}
+
+
+
+/**** **** **** **** **** ****
+  Fade In
+**** **** **** **** **** ****/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/**** **** **** **** **** ****
+  Slide Up
+**** **** **** **** **** ****/
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-450px);
+  }
+}
+
+
+
+
+/**** **** **** **** **** ****
+  Fade In Up
+**** **** **** **** **** ****/
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}
+
+
+
+
+/**** **** **** **** **** ****
+  Fade In Down
+**** **** **** **** **** ****/
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

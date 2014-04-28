@@ -1,0 +1,67 @@
+/* ==========================================================================
+  Animations - applied
+========================================================================== */
+
+
+.animation-wrap {
+  position: relative;
+  @include clearfix();
+}
+
+.fadeIn {
+  opacity: 0;
+  animation-name: fadeIn;
+
+  @include breakpoint(medium) {
+    animation-name: none;
+    opacity: 1;
+  }
+  @include breakpoint(small) {
+    animation-name: none;
+    opacity: 1;
+  }
+}
+
+.slideUp {
+  animation-name: slideUp;
+
+  @include breakpoint(medium) {
+    animation-name: none;
+  }
+  @include breakpoint(small) {
+    animation-name: none;
+  }
+}
+
+
+.go {
+  &.fadeIn,
+  .fadeIn {
+    animation-duration: .8s;
+    animation-delay: .2s;
+  }
+
+  &.slideUp,
+  .slideUp {
+    animation-duration: .5s;
+    animation-delay: .7s;
+  }
+
+  &.slide-up-2,
+  .slide-up-2 {
+    animation-delay: 1s;
+  }
+
+  &.delay-1,
+  .delay-1 {
+    animation-delay: .4s;
+  }
+  &.delay-2,
+  .delay-2 {
+    animation-delay: .7s;
+  }
+  &.delay-3,
+  .delay-3 {
+    animation-delay: 1s;
+  }
+}

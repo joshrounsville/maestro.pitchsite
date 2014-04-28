@@ -1,0 +1,155 @@
+ /* ==========================================================================
+  Header
+========================================================================== */
+
+
+header {
+  background: $blue;
+  padding: 40px 0 0 0;
+  min-height: 750px;
+  &.narrow {
+    min-height: 1px;
+    padding-bottom: 0;
+  }
+  h2 {
+    color: #fff;
+    margin: 30px 0 50px;
+  }
+  .btn {
+    margin: 0 0 100px;
+    animation: fadeIn .4s .4s both;
+  }
+  .purple & {
+    background: $purple;
+  }
+  .light-blue & {
+    background: $lightBlue;
+  }
+  .orange & {
+    background: $orange;
+  }
+  .error & {
+    min-height: 1px;
+    padding: 40px 0;
+  }
+
+  @include breakpoint(large) {
+    min-height: 700px;
+    padding: 30px 0 0 0;
+    .btn {
+      margin: 0 0 90px;
+    }
+  }
+  @include breakpoint(medium) {
+    min-height: 600px;
+    padding: 20px 0 0 0;
+    .btn {
+      animation: none;
+    }
+  }
+  @include breakpoint(small) {
+    min-height: 1px;
+    padding: 20px 0 100px 0;
+    .btn {
+      animation: none;
+      margin: 0 0 70px;
+    }
+  }
+}
+
+.phone-wrap {
+  position: relative;
+  display: none;
+  img {
+    position: absolute;
+  }
+}
+
+.slideUp1 {
+  left: 50%;
+  margin-left: -185px;
+  z-index: 3;
+  bottom: -1105px;
+  height: auto;
+  @include breakpoint(large) {
+    bottom: -985px;
+    width: 300px;
+    margin-left: -150px;
+  }
+  @include breakpoint(medium) {
+    bottom: -405px;
+    width: 250px;
+    margin-left: -125px;
+  }
+  @include breakpoint(small) {
+    bottom: -315px;
+    width: 200px;
+    margin-left: -100px;
+  }
+}
+
+.slideUp2 {
+  left: 0;
+  z-index: 2;
+  bottom: -1240px;
+  height: auto;
+  @include breakpoint(large) {
+    bottom: -1085px;
+    width: 300px;
+  }
+  @include breakpoint(medium) {
+    bottom: -450px;
+    width: 250px;
+  }
+  @include breakpoint(small) {
+    bottom: -315px;
+    width: 200px;
+    bottom: -370px;
+    left: 2%;
+  }
+}
+
+.slideUp3 {
+  right: 0;
+  z-index: 1;
+  bottom: -1170px;
+  height: auto;
+  @include breakpoint(large) {
+    bottom: -1045px;
+    width: 300px;
+  }
+  @include breakpoint(medium) {
+    bottom: -440px;
+    width: 250px;
+  }
+  @include breakpoint(small) {
+    bottom: -315px;
+    width: 200px;
+    bottom: -350px;
+    right: 2%;
+  }
+}
+
+.blue {
+  .phone-blue {
+    display: block;
+  }
+}
+
+.light-blue {
+  .phone-light-blue {
+    display: block;
+  }
+}
+
+.purple {
+  .phone-purple {
+    display: block;
+  }
+}
+
+.orange {
+  .phone-orange {
+    display: block;
+  }
+}

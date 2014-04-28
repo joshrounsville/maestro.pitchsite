@@ -1,0 +1,102 @@
+/* ==========================================================================
+  Footer
+========================================================================== */
+
+
+footer {
+  padding: 30px 0 100px;
+  font-size: 16px;
+  color: #fff;
+  li {
+    margin: 0 5px 0 0;
+  }
+  h2 {
+    margin: 0;
+  }
+  img {
+    margin-top: -11px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .15s ease-in-out;
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+    .purple & {
+      &:hover,
+      &:focus {
+        color: $purple;
+      }
+    }
+    .light-blue & {
+      &:hover,
+      &:focus {
+        color: $lightBlue;
+      }
+    }
+    .orange & {
+      &:hover,
+      &:focus {
+        color: $orange;
+      }
+    }
+  }
+
+  .right {
+    font-size: 26px;
+    a {
+      display: block;
+      height: 50px;
+      width: 50px;
+      padding: 4px 0 0 0;
+      text-align: center;
+    }
+    .email {
+      border: 2px solid $blue;
+      &:hover,
+      &:focus {
+        background-color: $blue;
+        color: #fff;
+      }
+    }
+    .twitter {
+      border: 2px solid #1BA8E2;
+      &:hover,
+      &:focus {
+        background-color: #1BA8E2;
+        color: #fff;
+      }
+    }
+    .facebook {
+      border: 2px solid #39579A;
+      &:hover,
+      &:focus {
+        background-color: #39579A;
+        color: #fff;
+      }
+    }
+  }
+
+  @include breakpoint(small) {
+    .left {
+      float: none;
+      margin: 0 auto;
+      li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 10px;
+      }
+      img {
+        margin: 0;
+      }
+    }
+    .right {
+      float: none;
+      margin: 30px auto 0;
+      text-align: center;
+    }
+  }
+}

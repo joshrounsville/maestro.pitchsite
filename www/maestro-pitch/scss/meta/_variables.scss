@@ -1,0 +1,32 @@
+/* ==========================================================================
+  Variables
+========================================================================== */
+
+$padding: 20px;
+$margin: 50px;
+
+$blue: #5DAFFF;
+$purple: #9A75FD;
+$lightBlue: #57DAF0;
+$orange: #F6AB0C;
+
+$grayDark: #2C3234;
+$grayLight: #F2F5F5;
+
+$textColor: #777;
+$headlineColor: #2C3133;
+
+$linkColor: #333;
+$linkHover: lighten($linkColor, 20%);
+
+@mixin thinFont() {
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin regularFont() {
+  font-family: "Open Sans", helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}

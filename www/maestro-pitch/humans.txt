@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+  Erik Porter -- Developer -- @humancompiler
+  Nelson Carrillo -- Developer -- @xamldude
+  Ben Krogh -- Lead Designer -- @benkrogh
+  Josh Rounsville -- Web Developer -- @joshrounsville
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Node.js, Gulp
+    Normalize.css, jQuery, Modernizr
+    Responsive Design
